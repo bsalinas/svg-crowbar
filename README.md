@@ -53,6 +53,6 @@ if(sources.length > 0){
 ```
 
 # Example
-See the example directory for examples.
+See the example directory for a basic example as well as an example using this library with [svgenie](https://github.com/Causata/svgenie) to download the svg as a png.
 
 
