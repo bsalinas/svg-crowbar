@@ -11,7 +11,7 @@ One of the things that SVG Crowbar does very nicely is automatically embed style
 * Allows you to get the Blob of any individual SVG (for saving files programmatically)
 
 # Usage
-Include `svg-crowbar-2.js` in your website. This will expose the `crowbar` object which has the following methods
+Include `svg-crowbar.js` in your website. This will expose the `crowbar` object which has the following methods
 ## findAndParseSVGs
 This method should be called first. It returns an array of SVGs which the library finds on your DOM.
 ```
