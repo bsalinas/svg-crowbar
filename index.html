@@ -3,6 +3,7 @@
   <meta charset='utf-8'>
   <title>SVG Crowbar</title>
   <link rel="stylesheet" type="text/css" href="assets/linked.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
   <style>
 
     /* Testing */
@@ -92,7 +93,7 @@
     Some users reported that styles were not stored with the SVG files, so we added a new version that should work everywhere. The new method is slower, so loading can take a while on pages with many SVG elements. Still in beta.
   </p>
   <p>
-    <a class="bookmarklet ver2" href="javascript:javascript: (function () { var e = document.createElement('script'); e.setAttribute('src', 'https://nytimes.github.io/svg-crowbar/svg-crowbar-2.js'); e.setAttribute('class', 'svg-crowbar'); document.body.appendChild(e); })();">SVG Crowbar 2</a>&nbsp; <span>← Drag this to your bookmarks bar.</span>
+    <a class="bookmarklet ver2" href="#">SVG Crowbar 2</a>&nbsp; <span>← Drag this to your bookmarks bar.</span>
   <p>
 
   <h3>Notes</h3>
@@ -163,6 +164,24 @@
         .attr("x", width / 2)
         .attr("y", height / 5 * 4)
         .text("An HTML dependency, this text should be pink.");
+
+  </script>
+  <script src="svg-crowbar-2.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.ver2').click(function(e){
+      e.preventDefault();
+      var sources = crowbar.initialize();
+      for(var i=0; i<sources.length; i++){
+        console.log(crowbar.prepareBlob(sources[i]))
+        crowbar.download(sources[i]);
+      }
+      console.log(sources);
+      console.log(crowbar);
+
+
+    })
+  });
 
   </script>
 
