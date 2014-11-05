@@ -52,4 +52,7 @@ if(sources.length > 0){
 }
 ```
 
+# Example
+See the example directory for examples.
+
 
