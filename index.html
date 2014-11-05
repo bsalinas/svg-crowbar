@@ -79,15 +79,6 @@
   <h1>SVG Crowbar</h1>
   <p>A Chrome-specific bookmarklet that extracts SVG nodes and accompanying styles from an HTML document and downloads them as an SVG file—A file which you could open and edit in Adobe Illustrator, for instance. Because SVGs are resolution independent, it’s great for when you want to use web technologies to create documents that are meant to be printed (like, maybe on newsprint). It was created with <a href="http://d3js.org">d3.js</a> in mind, but it should work fine no matter how you choose to generate your SVG.</p>
 
-  <h3>The Bookmarklet</h3>
-  <p>
-    <a class="bookmarklet" href="javascript:javascript: (function () { var e = document.createElement('script'); e.setAttribute('src', 'https://nytimes.github.io/svg-crowbar/svg-crowbar.js'); e.setAttribute('class', 'svg-crowbar'); document.body.appendChild(e); })();">SVG Crowbar</a>&nbsp;
-    <span>← Drag this to your bookmarks bar.</span>
-  </p>
-
-  <p>After you’ve installed the bookmarklet, you can execute it on any page. Go ahead and try it out on this <a href="http://bl.ocks.org/mbostock/4458497">crazy map</a>.</p>
-  <p class="note">(You can click on the link instead to test it on this page immediately.)</p>
-
   <h3>Update</h3>
   <p>
     Some users reported that styles were not stored with the SVG files, so we added a new version that should work everywhere. The new method is slower, so loading can take a while on pages with many SVG elements. Still in beta.
