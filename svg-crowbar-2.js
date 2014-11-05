@@ -13,7 +13,7 @@ var crowbar = (function() {
   };
 
 
-  function initialize() {
+  function findAndParseSVGs() {
     var documents = [window.document],
         SVGSources = [];
         iframes = document.querySelectorAll("iframe"),
@@ -173,7 +173,7 @@ var crowbar = (function() {
   }
 
   return{
-    initialize:initialize,
+    findAndParseSVGs:findAndParseSVGs,
     download:download,
     prepareBlob:prepareBlob
   }
